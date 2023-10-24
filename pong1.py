@@ -47,7 +47,7 @@ paddle2 = Paddle()
 paddle2.rect.x = 715
 paddle2.rect.y = 225
 
-paddle_speed = 10
+paddle_speed = 50
 
 ball = Ball()
 ball.rect.x = 375
