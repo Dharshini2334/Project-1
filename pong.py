@@ -128,9 +128,10 @@ while run:
 
     if paddle2.rect.colliderect(ball.rect):
         ball.dx = -1
+        
 
     #Calling the redraw function
-    redraw()
+    redraw() 
 
 pygame.quit()
     
