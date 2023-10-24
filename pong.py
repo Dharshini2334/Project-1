@@ -17,7 +17,7 @@ pygame.display.set_caption('Pong Game')
 
 #Colours to be used in the game
 white = (255, 255, 255)
-black = (0, 0, 0)
+aquamarine4 = (69,139,116)	 
 
 
 #creating a class of objects to be used in the game such as the paddle and ball
@@ -58,7 +58,7 @@ all_sprites.add(paddle1, paddle2, ball)
 
 #Displaying the game screen
 def redraw():
-    win.fill(black)
+    win.fill(aquamarine4)
     #Title Font
     font = pygame.font.SysFont('Comic Sans MS', 30)
     text = font.render('PONG Made By CyberXploit', False, white)
