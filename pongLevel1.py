@@ -10,10 +10,15 @@ import pygame
 
 pygame.init()
 
+
 #Setting our window screen
 win = pygame.display.set_mode((750, 500))
 pygame.display.set_caption('Pong Game')
 
+#speed of different levels
+delayInit = 100
+delayLevelFactor = 1
+delayFactor = (delayLevelFactor/2)
 
 #Colours to be used in the game
 white = (255, 255, 255)
@@ -86,7 +91,7 @@ def redraw():
 #Main loop
 run = True
 while run:
-    pygame.time.delay(100)
+    pygame.time.delay(delayInit * delayLevelFactor)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
