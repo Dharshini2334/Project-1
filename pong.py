@@ -61,7 +61,7 @@ def redraw():
     win.fill(aquamarine4)
     #Title Font
     font = pygame.font.SysFont('Comic Sans MS', 30)
-    text = font.render('PONG Made By CyberXploit', False, white)
+    text = font.render('PONG GAME', False, white)
     textRect = text.get_rect()
     textRect.center = (750//2, 25)
     win.blit(text, textRect)
