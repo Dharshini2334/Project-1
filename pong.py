@@ -47,7 +47,7 @@ paddle2 = Paddle()
 paddle2.rect.x = 715
 paddle2.rect.y = 225
 
-paddle_speed = 25
+paddle_speed = 10
 
 ball = Ball()
 ball.rect.x = 375
@@ -86,7 +86,7 @@ def redraw():
 #Main loop
 run = True
 while run:
-    pygame.time.delay(125)
+    pygame.time.delay(100)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
