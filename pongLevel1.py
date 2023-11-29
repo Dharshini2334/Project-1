@@ -129,6 +129,18 @@ while run:
     if paddle1.points >= 5 or paddle2.points >= 5:
         level += 1
         print(str(level))
+        if paddle1.points >= 5 or paddle2.points >= 5:
+        level += 1
+        print(str(level))
+        if paddle1.points >= 5:
+            # Display a question if Player 1 reaches 5 points
+            answer = input("Congratulations! You've reached 5 points! Here's a question: [Your Question] ")
+            # You can add logic to check the answer if needed
+        else:
+            # Display a question if Player 2 reaches 5 points
+            answer = input("Congratulations! You've reached 5 points! Here's a question: [Your Question] ")
+            # You can add logic to check the answer if needed
+
         # flashLevel()
         paddle1.points = 0
         paddle2.points = 0  
